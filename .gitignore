@@ -1,0 +1,9 @@
+node_modules
+
+.vscode
+
+.sonarlint
+
+package-lock.json
+
+.eslintrc

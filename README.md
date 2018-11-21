@@ -4,5 +4,4 @@ The goal of this project is to create an application to calculate the ideal slee
 
 As for example the bedtime which depends on the waking time etc. etc.
 
-
 The project is in development.
