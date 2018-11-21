@@ -1,9 +1,7 @@
 {
-    "compilerOptions": {
-      "sourceMap": true,
-      "outFile": "app/lib/build.js",
-    },
-    "exclude": [
-      "node_modules/*"
-    ]
-  }
+  "compilerOptions": {
+    "sourceMap": true,
+    "outFile": "app/lib/js/build.js"
+  },
+  "exclude": ["node_modules/*"]
+}
