@@ -1,37 +1,37 @@
-.title-header {
-  font-size: 40px;
-  margin-bottom: 40px; }
-
-.form .select-form {
-  margin-bottom: 30px; }
+@import "./helper/helper.scss";
 
 body {
-  background-color: #2a2a2a;
-  color: #4cc2e4;
+  background-color: $primaryBC;
+  color: $primaryColor;
   margin: 5vw 5vw 0 5vw;
   padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  body h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  h1 {
     font-size: 24px;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
-    line-height: 26.4px; }
-  body h3 {
+    line-height: 26.4px;
+  }
+  h3 {
     font-size: 14px;
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
-    line-height: 15.4px; }
-  body p {
+    line-height: 15.4px;
+  }
+  p {
     font-size: 14px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 20px; }
-  body blockquote {
+    line-height: 20px;
+  }
+  blockquote {
     font-size: 21px;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-    line-height: 30px; }
+    line-height: 30px;
+  }
+}
