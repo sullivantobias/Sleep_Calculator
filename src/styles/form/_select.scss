@@ -2,6 +2,9 @@
 
 .form {
   .select-form {
-    margin-bottom: 30px;
+    &-wake,
+    &-sleep {
+      margin-bottom: 30px;
+    }
   }
 }

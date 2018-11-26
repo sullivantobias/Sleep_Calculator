@@ -4,8 +4,8 @@
   .btn {
     background-color: $darkTheme;
     color: $lightTheme;
-
     transition: all 1s;
+
     &:hover {
       background-color: $primaryColor;
       color: $darkTheme;

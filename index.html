@@ -16,8 +16,8 @@
       <div class="row">
         <h1 class="col-12 title-header text-center">Sleep Calculator</h1>
 
-        <div class="form col-12">
-          <div class="select-form">
+        <div class="form col-5">
+          <div class="select-form-wake" id="wake">
             <p>Wake up time</p>
             <select name="hours" id="hours">
               <option disabled selected>hours</option>
@@ -63,12 +63,79 @@
             </select>
           </div>
 
-          <div><button id="send" name="send" class="btn">Send</button></div>
+          <div>
+            <button id="sendWake" name="send" class="btn">Send</button>
+            <button id="resetWake" name="reset" class="btn">Reset</button>
+          </div>
+        </div>
+        <div class="col-2">
+          <label class="switch">
+            <input type="checkbox" />
+            <div class="slider"></div>
+          </label>
+        </div>
+        <div class="form col-5">
+          <div class="select-form-sleep" id="sleep">
+            <p>Sleep time</p>
+            <select name="hours" id="hours" disabled>
+              <option disabled selected>hours</option>
+              <option value="0">00</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+            </select>
+            <select name="minutes" id="minutes" disabled>
+              <option disabled selected>minutes</option>
+              <option value="00">00</option>
+              <option value="05">05</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="35">35</option>
+              <option value="40">40</option>
+              <option value="45">45</option>
+              <option value="50">50</option>
+              <option value="55">55</option>
+            </select>
+          </div>
+
+          <div>
+            <button id="sendSleep" name="send" class="btn" disabled>
+              Send
+            </button>
+            <button id="resetSleep" name="teset" class="btn" disabled>
+              Reset
+            </button>
+          </div>
         </div>
       </div>
     </div>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/bootstrap-toggle/js/bootstrap-toggle.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="./node_modules/moment/moment.js"></script>
     <script src="./app/lib/js/build.js"></script>
   </body>

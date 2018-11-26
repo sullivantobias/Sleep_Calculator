@@ -1,0 +1,12 @@
+/* List component */
+
+.bestTimes {
+  margin-top: 20px;
+  padding-left: 0;
+
+  > li {
+    display: inline;
+    margin-right: 50px;
+    list-style: none;
+  }
+}
