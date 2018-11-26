@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "It will tell you the best time to go to sleep or wake up",
   "scripts": {
-    "start": "start npm run scss && npm run build",
+    "start": "npm run scss && npm run build",
     "scss": "node-sass --watch src/styles/styles.scss -o app/lib/styles",
     "build": "tsc --watch"
   },

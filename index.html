@@ -16,9 +16,10 @@
       <div class="row">
         <h1 class="col-12 title-header text-center">Sleep Calculator</h1>
 
-        <div class="form col-5">
+        <div class="form col-5 text-center">
+          <span class="dot active"></span>
           <div class="select-form-wake" id="wake">
-            <p>Wake up time</p>
+            <p>At what time do you want to wake up ?</p>
             <select name="hours" id="hours">
               <option disabled selected>hours</option>
               <option value="0">00</option>
@@ -68,15 +69,17 @@
             <button id="resetWake" name="reset" class="btn">Reset</button>
           </div>
         </div>
-        <div class="col-2">
+        <div class="col-2 text-center">
+          <p>Choose left or right</p>
           <label class="switch">
             <input type="checkbox" />
             <div class="slider"></div>
           </label>
         </div>
-        <div class="form col-5">
+        <div class="form col-5 text-center">
+          <span class="dot"></span>
           <div class="select-form-sleep" id="sleep">
-            <p>Sleep time</p>
+            <p>At what time do you want to sleep ?</p>
             <select name="hours" id="hours" disabled>
               <option disabled selected>hours</option>
               <option value="0">00</option>

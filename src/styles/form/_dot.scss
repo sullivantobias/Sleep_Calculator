@@ -1,0 +1,15 @@
+/* dot */
+
+@import "../helper/helper";
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: $lightNotActive;
+  border-radius: 50%;
+  display: inline-block;
+
+  &.active {
+    background-color: $lightActive;
+  }
+}
