@@ -1,6 +1,6 @@
 {
   "name": "sleep-calculator",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "It will tell you the best time to go to sleep or wake up",
   "scripts": {
     "start": "npm run scss && npm run build",

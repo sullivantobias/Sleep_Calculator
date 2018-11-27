@@ -1,13 +1,16 @@
 /* List component */
+.responses {
+  margin-top: 60px;
 
-.bestTimes {
-  margin-top: 20px;
-  font-size: 45px;
-  padding-left: 0;
+  .bestTimes {
+    margin-top: 20px;
+    font-size: 45px;
+    padding-left: 0;
 
-  > li {
-    display: inline;
-    margin-right: 50px;
-    list-style: none;
+    > li {
+      display: inline;
+      margin-right: 50px;
+      list-style: none;
+    }
   }
 }

@@ -94,14 +94,14 @@ class Calculator {
    }
 
    private times(h: number, m: number) {
-      const wake = moment();
-      const sleep = moment();
+      const wake: any = moment();
+      const sleep: any = moment();
 
-      const hoursWake = this.chosenTimeWake[0];
-      const minutesWake = this.chosenTimeWake[1];
+      const hoursWake: number = this.chosenTimeWake[0];
+      const minutesWake: number = this.chosenTimeWake[1];
 
-      const hoursSleep = this.chosenTimeSleep[0];
-      const minutesSleep = this.chosenTimeSleep[1];
+      const hoursSleep: number = this.chosenTimeSleep[0];
+      const minutesSleep: number = this.chosenTimeSleep[1];
 
       const timesWake = (wake.hours(hoursWake), wake.minute(minutesWake));
       const timesSleep = (sleep.hours(hoursSleep), sleep.minute(minutesSleep));
@@ -135,17 +135,29 @@ class Calculator {
          this.times(cycles[6], cycles[7]);
 
          const form: Element = document.querySelector('.row');
+         const divUl: HTMLElement = document.createElement('div');
+         const title: HTMLElement = document.createElement('h2');
          const ul: HTMLElement = document.createElement('ul');
 
+         divUl.classList.add('responses', 'col-12', 'text-center');
          ul.classList.add('bestTimes');
 
+         let titleForList = '';
+
+         if (button === this.sendWake) {
+            titleForList = 'You should fall asleep at these times';
+         } else titleForList = 'You should wake up at these times';
+
+         title.innerHTML = titleForList;
          for (let i = 0; i < this.bestTimes.length; i++) {
             const li = document.createElement('li');
             li.innerHTML = this.bestTimes[i];
+            divUl.append(title);
+            divUl.append(ul);
             ul.append(li);
          }
 
-         this.insertAfter(ul, form);
+         this.insertAfter(divUl, form);
       });
    }
 
@@ -168,7 +180,13 @@ class Calculator {
 
             this.activate = true;
 
-            document.querySelector('ul').remove();
+            if (document.querySelector('ul') && document.querySelector('h2')) {
+               document.querySelector('ul').remove();
+               document.querySelector('h2').remove();
+            }
+
+            document.querySelectorAll('.dot')[0].classList.remove('active');
+            document.querySelectorAll('.dot')[1].classList.add('active');
          } else {
             this.selectsSleep.forEach(
                (element) => ((element.disabled = true), this.init())
@@ -180,7 +198,12 @@ class Calculator {
 
             this.activate = false;
 
-            document.querySelector('ul').remove();
+            if (document.querySelector('ul') && document.querySelector('h2')) {
+               document.querySelector('ul').remove();
+               document.querySelector('h2').remove();
+            }
+            document.querySelectorAll('.dot')[0].classList.add('active');
+            document.querySelectorAll('.dot')[1].classList.remove('active');
          }
       });
    }
